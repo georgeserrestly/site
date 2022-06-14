@@ -1,0 +1,77 @@
+html,
+body {
+	font-family: Helvetica;
+	height: 100%;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	width: 100%
+}
+
+#main {
+	background-image: url(../img/bg.png);
+	background-position: center;
+	background-size: cover;
+	height: 100%;
+	overflow: hidden;
+	width: 100%
+}
+
+
+#portal {
+	bottom: 0;
+	height: 570px;
+	left: 0;
+	margin: auto;
+	position: absolute;
+	right: 0;
+	text-align: center;
+	top: 0;
+	width: 1000px
+}
+
+#buttons {
+	bottom: 75px;
+	height: 150px;
+	position: absolute;
+	width: 1000px
+}
+
+.button {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 190px;
+	cursor: pointer;
+	display: inline-block;
+	height: 300px;
+	transition: background-size .2s ease;
+	width: 200px
+}
+
+.button:hover {
+	background-size: 200px
+}
+
+.button:active {
+	background-size: 180px
+}
+
+#first-button {
+	background-image: url(../img/forums-icon.png)
+}
+
+#second-button {
+	background-image: url(../img/store-icon.png)
+}
+
+#third-button {
+	background-image: url(../img/news-icon.png)
+}
+
+#fourth-button {
+	background-image: url(../img/bans-icon.png)
+}
+
+#fifth-button {
+	background-image: url(../img/vote-icon.png)
+}
