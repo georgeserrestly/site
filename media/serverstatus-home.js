@@ -16,12 +16,12 @@ fetch("https://api.mcsrvstat.us/2/play.avenger.ro")
     })
 .then(data => {
     if (data.online == true) {
-        document.getElementById("serverVer").innerHTML = `Relaxeaza-te, intra pe Avenger Romania, castiga bani jucandu-te si ramai alaturi de noi!`;
+        document.getElementById("serverVer").innerHTML = `Relax, join Tropical SMP, earn money playing and stay with us!`;
 
         // siteNav dependent
         
-        document.getElementById("serverStatus").innerHTML = `<p class="font-bold select-none"><span class="text-green-600">&#11044;</span>&emsp;Avenger Romania este online!&ensp;&middot;&ensp;${data.players.online} se joaca</p>`;
-        document.getElementById("serverStatusM").innerHTML = `<p class="font-bold select-none"><span class="text-green-600">&#11044;</span>&emsp;Online, ${data.players.online} se joaca</p>`;
+        document.getElementById("serverStatus").innerHTML = `<p class="font-bold select-none"><span class="text-green-600">&#11044;</span>&emsp;Tropical SMP is online!&ensp;&middot;&ensp;${data.players.online} s\is playing right now</p>`;
+        document.getElementById("serverStatusM").innerHTML = `<p class="font-bold select-none"><span class="text-green-600">&#11044;</span>&emsp;Online, ${data.players.online} is playing right now</p>`;
         
     }
     else {
@@ -31,8 +31,8 @@ fetch("https://api.mcsrvstat.us/2/play.avenger.ro")
 
         // siteNav dependent
         
-        document.getElementById("serverStatus").innerHTML = `<p class="font-bold select-none"><span class="text-red-600">&#11044;</span>&emsp;Indisponibil</p>`;
-        document.getElementById("serverStatusM").innerHTML = `<p class="font-bold select-none"><span class="text-red-600">&#11044;</span>&emsp;Indisponibil</p>`;
+        document.getElementById("serverStatus").innerHTML = `<p class="font-bold select-none"><span class="text-red-600">&#11044;</span>&emsp;Offline</p>`;
+        document.getElementById("serverStatusM").innerHTML = `<p class="font-bold select-none"><span class="text-red-600">&#11044;</span>&emsp;Offline</p>`;
         
     }
 });
