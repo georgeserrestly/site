@@ -9,7 +9,7 @@ function handleErrors(response) {
 }
 
 // Fetch API, mcsrvstat
-fetch("https://api.mcsrvstat.us/2/play.avenger.ro")
+fetch("https://api.mcsrvstat.us/2/play.tropicalsmp.com")
     .then(handleErrors)
     .then(response => {
         return response.json();
